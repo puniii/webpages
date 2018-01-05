@@ -1,0 +1,52 @@
+<div class="container">
+
+<div class="header">Bootstrap <span class="label label-success">challenge!</span>
+</div>
+
+<div class="alert alert-success">alertクラス</div><!--追記-->
+<div class="alert alert-info">alertクラス</div><!--追記-->
+<div class="alert alert-warning">alertクラス</div><!--追記-->
+<div class="alert alert-danger">alertクラス</div><!--追記-->
+
+<nav class="navbar navbar-default"> <!-- 基本を定義するクラス -->
+  <div class="container-fluid"> <!-- 画面いっぱいに表示 -->
+    <div class="navbar-header"> <!-- ナビゲーションバーのヘッダーであることを定義 -->
+    <!-- ここからハンバーガーメニューやロゴなどを表示する領域 -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+          <!-- メディアクエリ-->
+        <span class="sr-only">Bootstrap</span> 
+        <!-- 音声ブラウザにハンバーガーメニューのボタンの存在を知らせるためのクラス-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> <!--以上がスマホサイズになった時のハンバーガーメニューの記述-->
+      
+      <a class="navbar-brand" href="#">Bootstrap</a> <!-- 左側にあるロゴの部分-->
+    </div>
+    <div id="gnavi" class="collapse navbar-collapse"> <!-- メニューリストの部分 768px以上の時だけに表示-->
+      <ul class="nav navbar-nav">
+        <li><a href="">top</a></li>
+        <li><a href="">menu1</a></li>
+        <li><a href="">menu2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<article>
+    <div class="contents">
+        <ul class="row">
+            <li class="col-md-offset-1 col-md-6">contents1</li> <!--6カラム分の幅の前に1カラム分の空白を入れる-->
+            <li class="col-md-offset-5 col-md-6">contents2</li>
+            <li class="col-md-offset-1 col-md-6">contents3</li>
+            <li class="col-md-offset-5 col-md-6">contents4</li>
+        </ul>
+    </div>
+    <div class="topic">
+         <ul>
+            <li>bootstrapを使ってレスポンシブデザインを実現しよう！</li>
+            <li>やればできる！bootstrapを使ってみよう！</li>
+            <li>怖くない！レスポンシブデザインができるようになればWebアプリケーションもワンランク上に！</li>
+        </ul>
+    </div>
+</article>
+</div>
